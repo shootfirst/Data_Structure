@@ -3,40 +3,61 @@
 
 ## Binary Search
 
-首先为了标出二分查找重点需要注意的地方，我们先写一道例题
+二分查找一般由三个主要部分组成：
 
-二分查找最简单例题：https://leetcode.cn/leetbook/read/binary-search/xexoac/
++ 预处理 —— 如果集合未排序，则进行排序。
 
-我认为一共有两个重点，这也是我写二分时稍微犹豫之处，其他地方我都是一气呵成。
++ 二分查找 —— 使用循环或递归在每次比较后将查找空间划分为两半。
 
-+ 第一：判断条件循环退出条件
-
-+ 第二：修改左右指针的条件以及对左右指针的修改
-
-下面，我列出二分查找的几个模板
++ 后处理 —— 在剩余空间中确定可行的候选者。
 
 ### 模板1
 
-​```java
 int binarySearch(int[] nums, int target){
+
   if(nums == null || nums.length == 0)
+  
     return -1;
 
   int left = 0, right = nums.length - 1;
+  
   while(left <= right){
+  
     // Prevent (left + right) overflow
+    
     int mid = left + (right - left) / 2;
+    
     if(nums[mid] == target){ return mid; }
+    
     else if(nums[mid] < target) { left = mid + 1; }
+    
     else { right = mid - 1; }
+    
   }
 
   // End Condition: left > right
+  
   return -1;
+  
 }
-​```
 
-即上面那个例题的题解，适合
+例题：https://leetcode.cn/leetbook/read/binary-search/xexoac/
+
+关键属性
+
++ 二分查找的最基础和最基本的形式。
++ 查找条件可以在不与元素的两侧进行比较的情况下确定（或使用它周围的特定元素）。
++ 不需要后处理，因为每一步中，你都在检查是否找到了元素。如果到达末尾，则知道未找到该元素。
+
+区分语法
+
++ 初始条件：left = 0, right = length-1
++ 终止：left > right
++ 向左查找：right = mid-1
++ 向右查找：left = mid+1
+
+
+
 
 
 
