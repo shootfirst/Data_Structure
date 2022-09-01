@@ -17,7 +17,7 @@
 
 ### 模板1
 
-`
+​```java
 int binarySearch(int[] nums, int target){
   if(nums == null || nums.length == 0)
     return -1;
@@ -34,7 +34,7 @@ int binarySearch(int[] nums, int target){
   // End Condition: left > right
   return -1;
 }
-`
+​```
 
 即上面那个例题的题解，适合
 
