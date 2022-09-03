@@ -167,6 +167,9 @@ https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/
 
 https://leetcode.cn/problems/minimum-window-substring/
 
+我有几个题解是错误解法，没有使用哈希表或者其他数据结构记录相关信息导致时间复杂度过大
+
+
 
 
 
