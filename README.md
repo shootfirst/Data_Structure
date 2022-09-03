@@ -149,6 +149,8 @@ https://leetcode.cn/problems/split-array-largest-sum/
 
 + 结束：结束窗口滑动，问题得到解决
 
+区间不同的定义决定了不同的初始化逻辑、遍历过程中的逻辑
+
 
 
 
