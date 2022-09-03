@@ -151,6 +151,22 @@ https://leetcode.cn/problems/split-array-largest-sum/
 
 区间不同的定义决定了不同的初始化逻辑、遍历过程中的逻辑
 
+### 固定长度滑动窗口
+
+这一类较为简单，滑动窗口大小固定
+
+https://leetcode.cn/problems/grumpy-bookstore-owner/
+
+注意思维转化，有的是在两边的区间，这个时候可以转化为中间的区间
+
+https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/
+
+### 不定长的滑动窗口
+
+相对于上面的定长，这个不定长滑动窗口一般是这个形式：右指针右移到刚好满足条件，然后左指针右移到刚好不满足条件，循环往复
+
+
+
 
 
 
