@@ -169,6 +169,34 @@ https://leetcode.cn/problems/minimum-window-substring/
 
 我有几个题解是错误解法，没有使用哈希表或者其他数据结构记录相关信息导致时间复杂度过大
 
+### 计数类问题
+
+计算数量问题往往需要使用相关数据结构，如哈希表记录相关数据
+
+这两题诠释了滑动窗口里的变通
+
+https://leetcode.cn/problems/subarrays-with-k-different-integers/
+
+https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/
+
+### 使用数据结构维护窗口性质
+
+主要是单调队列的使用
+
+https://leetcode.cn/problems/sliding-window-maximum/
+
+这个很难，以后慢慢研究
+
+https://leetcode.cn/problems/sliding-window-median/
+
+### 双指针
+
+滑动窗口就是双指针的一部分，我们最需要注意的就是左右指针移动的条件和时机
+
+https://leetcode.cn/problems/container-with-most-water/
+
+
+
 
 
 
