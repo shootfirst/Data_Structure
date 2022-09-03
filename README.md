@@ -163,9 +163,11 @@ https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/
 
 ### 不定长的滑动窗口
 
-相对于上面的定长，这个不定长滑动窗口一般是这个形式：右指针右移到刚好满足条件，然后左指针右移到刚好不满足条件，循环往复
+相对于上面的定长，这个不定长滑动窗口一般是这个形式：右指针右移到刚好满足条件，然后左指针右移到刚好不满足条件，循环往复。同时可能需要数据结构来记录相关数据，如前缀和
 
 https://leetcode.cn/problems/minimum-window-substring/
+
+
 
 
 
