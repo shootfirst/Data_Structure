@@ -195,6 +195,16 @@ https://leetcode.cn/problems/sliding-window-median/
 
 https://leetcode.cn/problems/container-with-most-water/
 
+注意后处理最后遗漏情况
+
+https://leetcode.cn/problems/long-pressed-name/
+
+### 总结
+
+对于滑动窗口和双指针这一类题型，首先，滑动窗口是特殊的双指针题型，分为定长和不定长滑动窗口，前者的实现十分简单，而后者注意滑动的条件，一般是右指针滑到满足条件，然后左指针
+滑到刚好不满足条件，重复即可。同时在滑动窗口中，有时候要稍微变通一下，才能更好的使用滑动窗口。同时在滑动的同时，我们有时候需要相应的数据结构来记录数据信息，如deque、二叉
+搜索树、哈希表等，这样可以大大减少我们的时间复杂度。同时对于后处理也十分重要，常常因为初值的设立导致最后会有情况遗漏。
+
 
 
 
