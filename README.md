@@ -227,6 +227,8 @@ https://leetcode.cn/problems/intersection-of-two-linked-lists/
 
 https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
 
+一般是通过设立快慢指针，快指针是慢指针速度两倍，注意null判断
+
 
 
 
