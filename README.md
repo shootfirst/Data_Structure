@@ -209,6 +209,24 @@ https://leetcode.cn/problems/long-pressed-name/
 
 和数组一样，链表也是常见的线性表
 
+### 链表中的双指针
+
+常见的三个问题：
+
+判断链表是否有环以及环入口点
+
+https://leetcode.cn/problems/linked-list-cycle/
+
+https://leetcode.cn/problems/linked-list-cycle-ii/
+
+判断两个链表是否交叉
+
+https://leetcode.cn/problems/intersection-of-two-linked-lists/
+
+删除倒数第N个节点
+
+https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
+
 
 
 
