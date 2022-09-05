@@ -211,6 +211,8 @@ https://leetcode.cn/problems/long-pressed-name/
 
 ### 链表中的双指针
 
+这里的双指针和数组的双指针会有很大的差别，主要还是快慢指针的运用
+
 常见的三个问题：
 
 判断链表是否有环以及环入口点
@@ -229,8 +231,27 @@ https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
 
 一般是通过设立快慢指针，快指针是慢指针速度两倍，注意null判断
 
+### 链表中的经典问题
 
+其实上面的题目也是经典问题，首先是各大厂最长考的反转链表，有递归和迭代法
 
+https://leetcode.cn/problems/reverse-linked-list/solution/
+
+移除链表元素，我在此则使用了伪头节点
+
+https://leetcode.cn/problems/remove-linked-list-elements/
+
+奇偶链表，注意双指针的使用
+
+https://leetcode.cn/problems/odd-even-linked-list/
+
+回文链表，是前面经典题目的结合，反转前一半链表和后一半对比，注意链表奇偶长度和双指针、反转链表的使用，是一个比较综合的题目
+
+https://leetcode.cn/problems/palindrome-linked-list/
+
+### 总结
+
+链表中的问题，可以从上述经典问题发散，由上述经典问题组合而成，注意保存pre节点的情况，注意快慢指针，注意头节点和尾节点处理，灵活使用递归，注意null的判断
 
 
 
