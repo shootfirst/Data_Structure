@@ -256,17 +256,36 @@ https://leetcode.cn/problems/palindrome-linked-list/
 
 ## Prefix
 
-前缀和也是线性表中一个较为关键的算法
+前缀和也是线性表中一个较为关键的算法，经常以一种优化方式出现在其他算法的环节中。
 
 ### 一维前缀和
 
+https://leetcode.cn/problems/range-sum-query-immutable/
+
 ### 二维前缀和
+
+几乎都是以此为模板：
+
+https://leetcode.cn/problems/range-sum-query-2d-immutable/
 
 ### 前缀和与后缀和
 
+和前缀和定义一样，经常前缀和和后缀和一起出现对一些问题进行优化：
+
+https://leetcode.cn/problems/flip-string-to-monotone-increasing/
+
 ### 前缀积和前缀异或
 
+和前缀和也是类似的
+
+https://leetcode.cn/problems/product-of-array-except-self/
+
 ### 差分
+
+差分和前缀和互为逆运算，前缀和可以方便查询，而一旦对原数组进行修改，就需要重新计算前缀和，因此它适用于多次查询的问题。而差分数组则恰好相反，它方便修改，但是每次查
+询都需要遍历一遍差分数组来获得原数组
+
+https://leetcode.cn/problems/car-pooling/
 
 
 
