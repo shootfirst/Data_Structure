@@ -308,6 +308,50 @@ https://leetcode.cn/problems/car-pooling/
 
 栈与队列是特殊的线性表，注意队列实现栈和栈实现队列两个经典例题
 
+## Binary Tree
+
+分类：
+
+满二叉树、完全二叉树、二叉搜索树和平衡二叉搜索树（avl）
+
+存储方式：
+
+链式、顺序
+
+遍历：
+
+深度优先遍历（前序遍历、中序遍历、后续遍历）和广度优先遍历（层序遍历）
+
+方式：迭代法使用栈和队列（前面讲过栈用于dfs，队列用于bfs），重点是迭代法
+
+前序遍历：
+
+https://leetcode.cn/problems/binary-tree-preorder-traversal/
+
+中序遍历：
+
+https://leetcode.cn/problems/binary-tree-inorder-traversal/
+
+后序遍历：
+
+https://leetcode.cn/problems/binary-tree-postorder-traversal/
+
+以上的迭代法没有统一风格，统一风格的写法见代码随想录
+
+层序遍历：
+
+https://leetcode.cn/problems/binary-tree-level-order-traversal/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
