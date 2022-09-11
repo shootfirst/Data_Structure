@@ -342,6 +342,35 @@ https://leetcode.cn/problems/binary-tree-postorder-traversal/
 
 https://leetcode.cn/problems/binary-tree-level-order-traversal/
 
+以后的问题，一定要思考如何使用二叉树的哪些遍历，递归还是非递归来解决问题！！！
+
+二叉树经典题目：都有递归和迭代解法
+
+翻转二叉树：
+
+https://leetcode.cn/problems/invert-binary-tree/
+
+对称二叉树：
+
+https://leetcode.cn/problems/symmetric-tree/
+
+二叉树最大深度：
+
+https://leetcode.cn/problems/maximum-depth-of-binary-tree/
+
+二叉树最小深度：
+
+https://leetcode.cn/problems/minimum-depth-of-binary-tree/
+
+完全二叉树的节点个数：
+
+https://leetcode.cn/problems/count-complete-tree-nodes/
+
+平衡二叉树：
+
+https://leetcode.cn/problems/balanced-binary-tree/
+
+有些使用迭代比递归难很多，而且效率低
 
 
 
