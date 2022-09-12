@@ -308,6 +308,8 @@ https://leetcode.cn/problems/car-pooling/
 
 栈与队列是特殊的线性表，注意队列实现栈和栈实现队列两个经典例题
 
+
+
 ## Binary Tree
 
 分类：
@@ -318,59 +320,96 @@ https://leetcode.cn/problems/car-pooling/
 
 链式、顺序
 
-遍历：
+### 遍历：
 
 深度优先遍历（前序遍历、中序遍历、后续遍历）和广度优先遍历（层序遍历）
 
 方式：迭代法使用栈和队列（前面讲过栈用于dfs，队列用于bfs），重点是迭代法
 
-前序遍历：
+#### 前序遍历：
 
 https://leetcode.cn/problems/binary-tree-preorder-traversal/
 
-中序遍历：
+#### 中序遍历：
 
 https://leetcode.cn/problems/binary-tree-inorder-traversal/
 
-后序遍历：
+#### 后序遍历：
 
 https://leetcode.cn/problems/binary-tree-postorder-traversal/
 
 以上的迭代法没有统一风格，统一风格的写法见代码随想录
 
-层序遍历：
+#### 层序遍历：
 
 https://leetcode.cn/problems/binary-tree-level-order-traversal/
 
 以后的问题，一定要思考如何使用二叉树的哪些遍历，递归还是非递归来解决问题！！！
 
-二叉树经典题目：都有递归和迭代解法
+### 二叉树经典题目：都有递归和迭代解法，这里注意递归三部曲：注意递归参数与返回值，注意终止条件，注意单层递归逻辑
 
-翻转二叉树：
+#### 翻转二叉树：
 
 https://leetcode.cn/problems/invert-binary-tree/
 
-对称二叉树：
+#### 对称二叉树：
 
 https://leetcode.cn/problems/symmetric-tree/
 
-二叉树最大深度：
+#### 二叉树最大深度：
 
 https://leetcode.cn/problems/maximum-depth-of-binary-tree/
 
-二叉树最小深度：
+#### 二叉树最小深度：
 
 https://leetcode.cn/problems/minimum-depth-of-binary-tree/
 
-完全二叉树的节点个数：
+#### 完全二叉树的节点个数：
 
 https://leetcode.cn/problems/count-complete-tree-nodes/
 
-平衡二叉树：
+#### 平衡二叉树：
 
 https://leetcode.cn/problems/balanced-binary-tree/
 
-有些使用迭代比递归难很多，而且效率低
+有些使用迭代比递归难很多，而且效率低，例如本题。
+
+上面的6道经典例题，使用递归法都可以通过三部曲很轻松地写出来。而对于迭代法，我们也是按照类似二叉树遍历的迭代法，其实它们也属于是二叉树的遍历，只是在遍历的时候记录相关信息。
+迭代法的使用，注意使用栈来存储节点，一个是问题不大。
+
+#### 二叉树的所有路径:
+
+https://leetcode.cn/problems/binary-tree-paths/
+
+这道题涉及到回溯算法，和上面六道经典题有些许不同
+
+#### 左叶子之和
+
+https://leetcode.cn/problems/sum-of-left-leaves/
+
+#### 找树左下角的值
+
+https://leetcode.cn/problems/find-bottom-left-tree-value/
+
+此题递归要难于迭代，注意递归法的使用细节
+
+#### 路径总和
+
+https://leetcode.cn/problems/path-sum/
+
+https://leetcode.cn/problems/path-sum-ii/
+
+### 构造二叉树
+
+#### 从中序与后序遍历序列构造二叉树
+
+https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+
+#### 从前序与中序遍历序列构造二叉树
+
+https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
+
 
 
 
