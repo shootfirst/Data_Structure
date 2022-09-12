@@ -409,6 +409,8 @@ https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-tr
 
 https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 
+只有前序遍历和后序遍历是不能构造二叉树的
+
 
 
 
