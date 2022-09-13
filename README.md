@@ -434,9 +434,21 @@ https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
 
 下面的题目则涉及到二叉搜索树，二叉搜索树bst是特殊的二叉树，性质不多bb
 
+
+
 #### 二叉搜索树中的搜索
 
 https://leetcode.cn/problems/search-in-a-binary-search-tree/
+
+#### 二叉搜索树中的插入操作
+
+https://leetcode.cn/problems/insert-into-a-binary-search-tree/
+
+#### 删除二叉搜索树中的节点
+
+https://leetcode.cn/problems/delete-node-in-a-bst/
+
+
 
 #### 二叉搜索树的最小绝对差
 
@@ -446,31 +458,28 @@ https://leetcode.cn/problems/minimum-absolute-difference-in-bst/
 
 https://leetcode.cn/problems/find-mode-in-binary-search-tree/
 
+#### 将有序数组转换为二叉搜索树
+
+https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/
+
+
+
 #### 二叉搜索树的最近公共祖先
 
 比对简单的二叉树找公共祖先简单的多
 
 tps://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/
 
-#### 二叉搜索树中的插入操作
-
-https://leetcode.cn/problems/insert-into-a-binary-search-tree/
 
 #### 修剪二叉搜索树
 
 https://leetcode.cn/problems/trim-a-binary-search-tree/
 
-#### 将有序数组转换为二叉搜索树
-
-https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/
-
 #### 把二叉搜索树转换为累加树
 
 https://leetcode.cn/problems/convert-bst-to-greater-tree/
 
-#### 删除二叉搜索树中的节点
 
-https://leetcode.cn/problems/delete-node-in-a-bst/
 
 
 
