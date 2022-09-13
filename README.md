@@ -346,7 +346,25 @@ https://leetcode.cn/problems/binary-tree-level-order-traversal/
 
 以后的问题，一定要思考如何使用二叉树的哪些遍历，递归还是非递归来解决问题！！！
 
-### 二叉树经典题目：都有递归和迭代解法，这里注意递归三部曲：注意递归参数与返回值，注意终止条件，注意单层递归逻辑
+
+### 构造二叉树
+
+#### 从中序与后序遍历序列构造二叉树
+
+https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+
+#### 从前序与中序遍历序列构造二叉树
+
+https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
+只有前序遍历和后序遍历是不能构造二叉树的
+
+
+### 二叉树经典题目：
+
+这些经典题目都有递归和迭代解法，我写的是递归法，而迭代法我则一般指明思路，有的也写了迭代法。
+
+对于递归法，这里注意递归三部曲：注意递归参数与返回值，注意终止条件，注意单层递归逻辑
 
 #### 翻转二叉树：
 
@@ -374,14 +392,9 @@ https://leetcode.cn/problems/balanced-binary-tree/
 
 有些使用迭代比递归难很多，而且效率低，例如本题。
 
-上面的6道经典例题，使用递归法都可以通过三部曲很轻松地写出来。而对于迭代法，我们也是按照类似二叉树遍历的迭代法，其实它们也属于是二叉树的遍历，只是在遍历的时候记录相关信息。
-迭代法的使用，注意使用栈来存储节点，一个是问题不大。
+#### 合并二叉树
 
-#### 二叉树的所有路径:
-
-https://leetcode.cn/problems/binary-tree-paths/
-
-这道题涉及到回溯算法，和上面六道经典题有些许不同
+https://leetcode.cn/problems/merge-two-binary-trees/
 
 #### 左叶子之和
 
@@ -393,23 +406,36 @@ https://leetcode.cn/problems/find-bottom-left-tree-value/
 
 此题递归要难于迭代，注意递归法的使用细节
 
+
+
+
+以上9题，确定递归三部曲都是问题不大，而下面的三题，则是有明显地渗入回溯算法思想
+
+
+
+#### 二叉树的所有路径:
+
+https://leetcode.cn/problems/binary-tree-paths/
+
+
 #### 路径总和
 
 https://leetcode.cn/problems/path-sum/
 
 https://leetcode.cn/problems/path-sum-ii/
 
-### 构造二叉树
 
-#### 从中序与后序遍历序列构造二叉树
+#### 二叉树的最近公共祖先
 
-https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
 
-#### 从前序与中序遍历序列构造二叉树
 
-https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 
-只有前序遍历和后序遍历是不能构造二叉树的
+
+
+
+
+
 
 
 
