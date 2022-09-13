@@ -468,7 +468,7 @@ https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/
 
 比对简单的二叉树找公共祖先简单的多
 
-tps://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/
+https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/
 
 
 #### 修剪二叉搜索树
