@@ -287,7 +287,7 @@ https://leetcode.cn/problems/product-of-array-except-self/
 
 https://leetcode.cn/problems/car-pooling/
 
-### Sort
+## Sort
 
 十大排序算法，提供时间复杂度分类
 
