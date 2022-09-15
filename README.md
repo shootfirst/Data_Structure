@@ -503,6 +503,10 @@ https://leetcode.cn/problems/convert-bst-to-greater-tree/
 
 以上这两个是最常见的
 
+### 并查集
+
+并查集是一种特殊的数据结构
+
 ### 和图相关的算法
 
 #### dfs和bfs
