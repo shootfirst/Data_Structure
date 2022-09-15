@@ -546,9 +546,31 @@ https://leetcode.cn/problems/all-paths-from-source-to-target/
 
 不能解决负权图
 
+https://leetcode.cn/problems/network-delay-time/
+
 ##### bellman-ford算法
 
-可以解决负权图
+可以解决负权图，建立在这个定理之上：在一个有 N 个顶点的非负权环图中，两点之间的最短路径最多经过 N-1条边。
+
+不适用于负权环图，但是可以检测负权环，即经过n-1次循环后，第n次循环还是出现距离减少，则证明有负权环
+
+使用动态规划，从最多经过0条边到其他点的最短距离迭代到最多经历n-1条边到其他点的最短距离
+
+https://leetcode.cn/problems/cheapest-flights-within-k-stops/
+
+#### 拓扑排序
+
+##### Kahn 算法
+
+思路：首先将所有入度为0的课入队，然后将图中所有入度为队列中顶点的顶点入度减去相应的值，重复此循环直到队列为空
+
+使用条件：
+
+有向无环图
+「图」中至少有一个顶点「入度」为 0 。如果「图」中所有顶点都有「入度」，则代表所有顶点都至少有一个前置顶点，那么这个就没有顶点可以作为「拓扑排序」的起点。
+
+https://leetcode.cn/problems/course-schedule-ii/
+
 
 
 
