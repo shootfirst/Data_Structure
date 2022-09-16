@@ -309,6 +309,9 @@ https://leetcode.cn/problems/car-pooling/
 
 栈与队列是特殊的线性表，注意队列实现栈和栈实现队列两个经典例题
 
+## Heap
+
+堆也是二叉树，可以分为小顶堆和大顶堆。
 
 
 ## Binary Tree
@@ -479,6 +482,8 @@ https://leetcode.cn/problems/trim-a-binary-search-tree/
 #### 把二叉搜索树转换为累加树
 
 https://leetcode.cn/problems/convert-bst-to-greater-tree/
+
+
 
 
 
