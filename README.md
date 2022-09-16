@@ -499,6 +499,8 @@ https://leetcode.cn/problems/convert-bst-to-greater-tree/
 
 + 路径压缩优化的并查集：每次find遍历时将遍历过路途的元素的父节点全部修改为根节点即可。时间复杂度均为ologn
 
+将上述两者优化方法合并，时间复杂度均为αn，线性时间复杂度
+
 
 
 
