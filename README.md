@@ -1,5 +1,6 @@
 # Leetcode
-记录我通过leetcode复习巩固数据结构的笔记
+记录我通过leetcode复习巩固数据结构的笔记。首先我在此总结几个最常见的轮子：快速排序、归并排序、堆排序、kruscal、prime、dijkstra、bellman-ford、floyd、并查集。这七个轮子每
+天写个，一个礼拜一轮回加深印象（前俩个排序归为一个）
 
 ## Array String
 
