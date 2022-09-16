@@ -480,7 +480,9 @@ https://leetcode.cn/problems/trim-a-binary-search-tree/
 
 https://leetcode.cn/problems/convert-bst-to-greater-tree/
 
-## Disjoint Set Union
+
+
+## UnionFind
 
 并查集这种数据结构，主要是为了解决网络中的连通性
 
@@ -501,6 +503,8 @@ https://leetcode.cn/problems/convert-bst-to-greater-tree/
 + 路径压缩优化的并查集：优化find，每次find遍历时将遍历过路途的元素的父节点全部修改为根节点即可。时间复杂度均为ologn
 
 将上述两者优化方法合并，时间复杂度均为αn，线性时间复杂度
+
+https://leetcode.cn/problems/number-of-provinces/
 
 
 
