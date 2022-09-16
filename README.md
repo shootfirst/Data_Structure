@@ -1,7 +1,6 @@
 # Leetcode
-记录我通过leetcode复习巩固数据结构的笔记。首先我在此总结几个最常见的轮子：快速排序、归并排序、堆排序、kruscal、prime、dijkstra、bellman-ford、floyd、并查集。这七个轮子每
-天写个，一个礼拜一轮回加深印象（前俩个排序归为一个）
-
+记录我通过leetcode复习巩固数据结构的笔记。首先我在此总结几个最常见的知识：快速排序、归并排序、堆排序、kruscal、prime、dijkstra、bellman-ford、floyd、并查集、二叉树三种
+迭代遍历
 ## Array String
 
 数组和字符串是最基本的两个数据结构（其实还有链表，这个以后说）。下面的二分查找、区间问题、矩阵操作、双指针、滑动窗口、排序等线性表相关算法也是基于此
@@ -361,6 +360,10 @@ https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-tr
 
 https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 
+#### 从中序与后序遍历序列构造二叉树
+
+https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+
 只有前序遍历和后序遍历是不能构造二叉树的
 
 
@@ -385,6 +388,10 @@ https://leetcode.cn/problems/maximum-depth-of-binary-tree/
 #### 二叉树最小深度：
 
 https://leetcode.cn/problems/minimum-depth-of-binary-tree/
+
+#### 相同的树
+
+https://leetcode.cn/problems/same-tree/
 
 #### 完全二叉树的节点个数：
 
@@ -413,7 +420,7 @@ https://leetcode.cn/problems/find-bottom-left-tree-value/
 
 
 
-以上9题，确定递归三部曲都是问题不大，而下面的三题，则是有明显地渗入回溯算法思想
+以上题，确定递归三部曲都是问题不大，而下面的三题，则是有明显地渗入回溯算法思想
 
 
 
@@ -609,6 +616,53 @@ https://leetcode.cn/problems/cheapest-flights-within-k-stops/
 「图」中至少有一个顶点「入度」为 0 。如果「图」中所有顶点都有「入度」，则代表所有顶点都至少有一个前置顶点，那么这个就没有顶点可以作为「拓扑排序」的起点。
 
 https://leetcode.cn/problems/course-schedule-ii/
+
+
+
+
+
+## Depth First Search
+
+深度优先搜索
+
+在线性数据结构中，按顺序一个一个看到所有元素，成为线性遍历。但是在非线性数据结构中，元素间的组织方式变的十分复杂，就有了不同的遍历行为，常见的可以分为深度优先遍历和
+广度优先遍历。这里我们探索深度优先遍历dfs。
+
++ 深度优先遍历，只要前面有可以走的路，就会一直向前走，直到无路可走才会返回
+
++ 无路可走的两种情况：遇到墙；遇到已经走过的路
+
++ 在无路可走的时候，我们原路返回到最近有没有走过路的路口，尝试继续没有走过的路径
+
++ 遍历不是很深奥的事情，把 所有可能的情况都看一遍，才能说找到了目标元素或者没找到目标元素。也称为穷举，在人类看来虽然很不起眼，但借助计算机强大的计算能力，穷举可以帮助我们
+  解决很多专业领域知识不能解决的问题。
+  
+  这里我们没有区分搜索和遍历概念，在后面的回溯算法中，我们再解释一下
+  
+### 二叉树的深度优先遍历
+  
+分为前中后序遍历，其中，后序遍历体现了底层信息向上传递过程，需要额外注意，我们之前写的有关于树的算法题很多都是后序遍历
+
+这部分题目参考之前的二叉树题目
+  
+### 图的深度优先遍历
+  
+在深度遍历中有回头的过程，在树中没有环，所以对于每个节点来说只会递归处理一次，但是在图中，由于存在环，所以需要记录（通常使用数组visit）被访问过的节点
+
+### 实现的关键数据结构：栈！！！
+
+在深度优先遍历的过程中，需要将 当前遍历到的结点 的相邻结点 暂时保存 起来，以便在回退的时候可以继续访问它们。遍历到的结点的顺序呈现「后进先出」的特点，因此 深度优先遍历可
+以通过「栈」实现。再者，深度优先遍历有明显的递归结构。我们知道支持递归实现的数据结构也是栈。因此实现深度优先遍历有以下两种方式：
+
++ 编写递归方法；
++ 编写栈，通过迭代的方式实现
+
+
+
+
+  
+
+
 
 
 
