@@ -479,6 +479,33 @@ https://leetcode.cn/problems/trim-a-binary-search-tree/
 
 https://leetcode.cn/problems/convert-bst-to-greater-tree/
 
+## Disjoint Set Union
+
+并查集这种数据结构，主要是为了解决网络中的连通性
+
+并查集数据结构关键在于两个方法，find和union，一个是查找根节点，一个是合并。
+
+判断两个点是否连通等效于判断两个点的根节点是否一致。合并两个时找到其中一个根节点，修改其根节点为另一个节点
+
+两种实现：
+
++ quick find 所有同一个集合中都指向一个根节点，高度唯一，find时间复杂度为o1，但是合并时需要找出所有修改其为新根节点，时间复杂度on
+
++ quick union find时需要一直find直到找到根节点，而union则直接简单合并两个节点即可，二者时间复杂度均为oh，h为并查集高度
+
+总体来说后者稍微高效，但是这二者最坏情况都会出现一条线，怎么在更深层次优化呢？
+
++ 按秩合并的并查集：通过给每个顶点记录高度，合并的时候矮的被高的合并即可。时间复杂度均为ologn
+
++ 路径压缩优化的并查集：每次find遍历时将遍历过路途的元素的父节点全部修改为根节点即可。时间复杂度均为ologn
+
+
+
+
+
+
+
+
 
 
 
@@ -502,10 +529,6 @@ https://leetcode.cn/problems/convert-bst-to-greater-tree/
 在每个边处使用链表存储所有边
 
 以上这两个是最常见的
-
-### 并查集
-
-并查集是一种特殊的数据结构
 
 ### 和图相关的算法
 
