@@ -766,12 +766,13 @@ https://leetcode.cn/problems/surrounded-regions/
 
 ## BFS
 
-广度优先搜索
+特别注意：将结点添加到队列以后，一定要马上标记为「已经访问」，否则相同结点会重复入队
 
 
 ### bfs在树中的运用
 
 主要是层序遍历，参考之前树的题型
+
 
 ### 二维平面搜索
 
@@ -779,10 +780,80 @@ https://leetcode.cn/problems/surrounded-regions/
 
 https://leetcode.cn/problems/max-area-of-island/
 
-
 #### 太平洋大西洋水流问题
 
 https://leetcode.cn/problems/pacific-atlantic-water-flow/
+
+
+### 抽象成图论问题
+
+有一些问题问我们最短、最少、最小，可以尝试将它们转换为求解无权图的最短路径的问题求解。
+
+对于这一类问题，最重要的一点在于分析出这一类问题的图结构，也就是对图形问题建模。依然是要注意到这些问题的背后是一个无权图的最短路径问题，因此可以使用广度优先遍历
+
+#### 完全平方数
+
+https://leetcode.cn/problems/perfect-squares/
+
+#### 零钱兑换
+
+https://leetcode.cn/problems/coin-change/
+
+#### 跳跃游戏 III
+
+https://leetcode.cn/problems/jump-game-iii/
+
+
+
+### 拓扑排序
+
+拓扑排序有两种实现：深度优先遍历、广度优先遍历。
+深度优先遍历。类似于二叉树的后续遍历得到拓扑排序，这种思路比较冷门，不要求深入学习。
+
+事实上，拓扑排序的更经典的实现是广度优先遍历。广度优先遍历在思想层面上更简单，编码也相对容易。还有一个好处：我们一直向大家强调了只有有向无环图才存在拓扑排序：
+
+用深度优先遍历得到拓扑序，须要在遍历的过程中检测有向图是否存在环；而应用「广度优先遍历」，我们只需要在有向图中执行一次广度优先遍历，在结束以后，就能够得到这个有向图是
+不是存在环，在不存在环的时候，输出拓扑排序的结果。也就是说，广度优先遍历还可以帮助我们检测有向图是否存在环。
+
+#### 火星词典
+
+https://leetcode.cn/problems/alien-dictionary/
+
+
+
+### 双向 BFS 与多源 BFS
+
+双向广度优先遍历，分别从起始状态和目标状态开始，以交替的方式扩展每一层，当两边搜索的状态列表有交集的时候，表示搜索过程相遇，搜索终止。双向 BFS 等价于单向 BFS，但是避免
+了单向 BFS 在层数很深的时候状态结点的大规模扩散。多源也是类似。
+
+#### 单词接龙
+
+https://leetcode.cn/problems/word-ladder/
+
+#### 腐烂的橘子
+
+https://leetcode.cn/problems/rotting-oranges/
+
+#### 最小基因变化
+
+https://leetcode.cn/problems/minimum-genetic-mutation/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
