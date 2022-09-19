@@ -764,6 +764,30 @@ https://leetcode.cn/problems/surrounded-regions/
 
 
 
+## BFS
+
+广度优先搜索
+
+
+### bfs在树中的运用
+
+主要是层序遍历，参考之前树的题型
+
+### 二维平面搜索
+
+#### 岛屿的最大面积
+
+https://leetcode.cn/problems/max-area-of-island/
+
+
+#### 太平洋大西洋水流问题
+
+https://leetcode.cn/problems/pacific-atlantic-water-flow/
+
+
+
+
+
 
 
 
