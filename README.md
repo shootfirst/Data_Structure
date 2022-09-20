@@ -843,6 +843,27 @@ https://leetcode.cn/problems/minimum-genetic-mutation/
 
 
 
+## Dynamic Programming
+
+动态规划，以前对dp怀有恐惧心理，今天我要亲手打破这恐惧
+
+对于dp，我们按这几步来分析，无论是简单题还是困难题
+
++ 确定dp数组（dp table）以及下标的含义
+
++ 确定递推公式
+
++ dp数组如何初始化
+
++ 确定遍历顺序
+
++ 举例推导dp数组
+
+
+
+
+
+
 
 
 
