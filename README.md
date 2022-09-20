@@ -859,6 +859,23 @@ https://leetcode.cn/problems/minimum-genetic-mutation/
 
 + 举例推导dp数组
 
+debug技巧，首先自己先推导dp数组，然后将dp数组打印出来看是否和自己推导的一致，不一致则是代码细节出现问题，若一致则检查初始化，还有dp数组的正确性等
+
+
+### 基础题目
+
+这一部分的题目主要是很基础的题目，让自己练习上面的dp五部曲，让自己对dp有最基本的了解
+
+#### 斐波那契数
+
+https://leetcode.cn/problems/fibonacci-number/
+
+#### 爬楼梯
+
+https://leetcode.cn/problems/climbing-stairs/
+
+
+
 
 
 
