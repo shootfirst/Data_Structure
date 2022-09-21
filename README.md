@@ -866,13 +866,37 @@ debug技巧，首先自己先推导dp数组，然后将dp数组打印出来看�
 
 这一部分的题目主要是很基础的题目，让自己练习上面的dp五部曲，让自己对dp有最基本的了解
 
-#### 斐波那契数
+##### 斐波那契数
 
 https://leetcode.cn/problems/fibonacci-number/
 
-#### 爬楼梯
+##### 爬楼梯
 
 https://leetcode.cn/problems/climbing-stairs/
+
+##### 不同路径
+
+https://leetcode.cn/problems/unique-paths/
+
+##### 不同路径 II
+
+https://leetcode.cn/problems/unique-paths-ii/
+
+##### 整数拆分
+
+https://leetcode.cn/problems/integer-break/
+
+##### 不同的二叉搜索树
+
+https://leetcode.cn/problems/unique-binary-search-trees/
+
+### 01背包问题
+
+这是背包系列最简单的问题
+
+有n件物品和一个最多能背重量为w 的背包。第i件物品的重量是weight[i]，得到的价值是value[i] 。每件物品只能用一次，求解将哪些物品装入背包里物品价值总和最大。
+
+
 
 
 
