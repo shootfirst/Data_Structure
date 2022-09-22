@@ -843,6 +843,88 @@ https://leetcode.cn/problems/minimum-genetic-mutation/
 
 
 
+## Dynamic Programming
+
+动态规划，以前对dp怀有恐惧心理，今天我要亲手打破这恐惧
+
+对于dp，我们按这几步来分析，无论是简单题还是困难题
+
++ 确定dp数组（dp table）以及下标的含义
+
++ 确定递推公式
+
++ dp数组如何初始化
+
++ 确定遍历顺序
+
++ 举例推导dp数组
+
+debug技巧，首先自己先推导dp数组，然后将dp数组打印出来看是否和自己推导的一致，不一致则是代码细节出现问题，若一致则检查初始化，还有dp数组的正确性等
+
+
+### 基础题目
+
+这一部分的题目主要是很基础的题目，让自己练习上面的dp五部曲，让自己对dp有最基本的了解
+
+##### 斐波那契数
+
+https://leetcode.cn/problems/fibonacci-number/
+
+##### 爬楼梯
+
+https://leetcode.cn/problems/climbing-stairs/
+
+##### 不同路径
+
+https://leetcode.cn/problems/unique-paths/
+
+##### 不同路径 II
+
+https://leetcode.cn/problems/unique-paths-ii/
+
+##### 整数拆分
+
+https://leetcode.cn/problems/integer-break/
+
+##### 不同的二叉搜索树
+
+https://leetcode.cn/problems/unique-binary-search-trees/
+
+
+
+### 01背包问题
+
+这是背包系列最简单的问题
+
+有n件物品和一个最多能背重量为w 的背包。第i件物品的重量是weight[i]，得到的价值是value[i] 。每件物品只能用一次，求解将哪些物品装入背包里物品价值总和最大。
+
+注意二维存储和一维存储的区别
+
+##### 分割等和子集
+
+https://leetcode.cn/problems/partition-equal-subset-sum/
+
+##### 最后一块石头的重量 II
+
+https://leetcode.cn/problems/last-stone-weight-ii/
+
+##### 目标和
+
+https://leetcode.cn/problems/target-sum/
+
+这道题是属于背包排列组合的题型，和之前的有些许不一样
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
