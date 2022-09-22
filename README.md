@@ -890,11 +890,31 @@ https://leetcode.cn/problems/integer-break/
 
 https://leetcode.cn/problems/unique-binary-search-trees/
 
+
+
 ### 01背包问题
 
 这是背包系列最简单的问题
 
 有n件物品和一个最多能背重量为w 的背包。第i件物品的重量是weight[i]，得到的价值是value[i] 。每件物品只能用一次，求解将哪些物品装入背包里物品价值总和最大。
+
+注意二维存储和一维存储的区别
+
+##### 分割等和子集
+
+https://leetcode.cn/problems/partition-equal-subset-sum/
+
+##### 最后一块石头的重量 II
+
+https://leetcode.cn/problems/last-stone-weight-ii/
+
+##### 目标和
+
+https://leetcode.cn/problems/target-sum/
+
+这道题是属于背包排列组合的题型，和之前的有些许不一样
+
+
 
 
 
