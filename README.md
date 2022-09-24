@@ -937,6 +937,8 @@ https://leetcode.cn/problems/coin-change-2/
 
 https://leetcode.cn/problems/combination-sum-iv/
 
+前者是完全背包排列问题而后者是完全背包组合问题，注意二者遍历区别
+
 
 
 
