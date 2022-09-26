@@ -932,12 +932,42 @@ https://leetcode.cn/problems/ones-and-zeroes/
 
 https://leetcode.cn/problems/coin-change-2/
 
-
 ##### 组合总和 Ⅳ
 
 https://leetcode.cn/problems/combination-sum-iv/
 
 前者是完全背包排列问题而后者是完全背包组合问题，注意二者遍历区别
+
+##### 爬楼梯
+
+https://leetcode.cn/problems/climbing-stairs/
+
+之前在动态规划基础题目的时候出现过，其实这就是一个完全背包排列问题，直接copy组合总和 Ⅳ的代码即可
+
+##### 零钱兑换
+
+https://leetcode.cn/problems/coin-change/
+
+这道题也是完全背包，但是这个是求最少数据或者最大数据的类型，所以循环的次序排列和组合都行
+
+##### 完全平方数
+
+https://leetcode.cn/problems/perfect-squares/
+
+之前我们使用dfs写过这个题目，但是时间复杂度过于恐怖，这回我们使用dp来写，这就是一个非排列组合的完全背包问题
+
+##### 单词拆分
+
+https://leetcode.cn/problems/word-break/
+
+也是完全背包
+
+### 背包总结：
+
+01背包：不能重复使用，所以遍历时应该使用上面一层，使用一维数组则需要先遍历物品，然后倒序遍历背包，这样才能做到使用上一层
+
+完全背包：能重复使用，所以遍历时应该使用本层。使用一维数组需要顺序遍历背包。非排列组合问题两个遍历顺序无所谓，而排列问题则先遍历背包，使用二维数组记得加最后一个数据。
+组合问题先遍历物品。
 
 
 
