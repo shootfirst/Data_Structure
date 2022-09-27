@@ -970,6 +970,40 @@ https://leetcode.cn/problems/word-break/
 组合问题先遍历物品。
 
 
+### 打家劫舍
+
+##### 打家劫舍
+
+https://leetcode.cn/problems/house-robber/
+
+##### 打家劫舍 II
+
+https://leetcode.cn/problems/house-robber-ii/
+
+##### 打家劫舍 III
+
+https://leetcode.cn/problems/house-robber-iii/
+
+这是我做的第一个树形dp类问题
+
+
+### 股票问题
+
+##### 买卖股票的最佳时机
+
+https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/
+
+##### 买卖股票的最佳时机 II
+
+https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/
+
+##### 买卖股票的最佳时机 III
+
+https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/
+
+
+
+
 
 
 
