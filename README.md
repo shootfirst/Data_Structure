@@ -1001,6 +1001,24 @@ https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/
 
 https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/
 
+难，值得思考dp数组
+
+##### 买卖股票的最佳时机 IV
+
+https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/
+
+难，值得思考dp数组
+
+##### 最佳买卖股票时机含冷冻期
+
+https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+
+难，值得思考dp数组
+
+##### 买卖股票的最佳时机含手续费
+
+https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+
 
 
 
