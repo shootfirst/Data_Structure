@@ -1021,6 +1021,38 @@ https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fe
 
 
 
+### 子序列问题
+
+##### 最长连续递增序列
+
+https://leetcode.cn/problems/longest-continuous-increasing-subsequence/
+
+##### 最长重复子数组
+
+https://leetcode.cn/problems/maximum-length-of-repeated-subarray/
+
+##### 最长公共子序列
+
+https://leetcode.cn/problems/longest-common-subsequence/
+
+##### 不相交的线
+
+https://leetcode.cn/problems/uncrossed-lines/
+
+##### 最大子数组和
+
+https://leetcode.cn/problems/maximum-subarray/
+
+##### 判断子序列
+
+https://leetcode.cn/problems/is-subsequence/
+
+##### 不同的子序列
+
+https://leetcode.cn/problems/distinct-subsequences/
+
+
+
 
 
 
