@@ -1,3 +1,5 @@
+// https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/
+
 class Solution {
     public int findMin(int[] nums) {
         int l=0,h=nums.length-1,m;
