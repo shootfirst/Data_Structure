@@ -1,21 +1,5 @@
-// class Solution {
-//     public int maxEnvelopes(int[][] envelopes) {
-//         if(envelopes.length==0) return 0;
-//         if(envelopes.length==1) return 1;
-//         int []f=new int[envelopes.length];
-//         Arrays.fill(f,1);
-//         Arrays.sort(envelopes,(v1,v2)->v1[0]==v2[0]?v1[1]-v2[1]:v1[0]-v2[0]);
-//         for(int i=0; i<envelopes.length; i++)
-//             for(int j=0; j<i; j++)
-//                 if(envelopes[j][1] < envelopes[i][1]&&envelopes[j][0] < envelopes[i][0])
-//                     f[i] = Math.max(f[i], f[j]+1);
-//         int ret=1;
-//         for(int i=0;i<f.length;i++) ret=Math.max(ret,f[i]);
-//         return ret;
-//     }
-// }
+// https://leetcode.cn/problems/russian-doll-envelopes/
 
-//动态规划，超出时间限制
 //最长上升子序列lis问题
 
 class Solution {
@@ -31,7 +15,7 @@ class Solution {
                     // 宽度升序
                     return e1[0] - e2[0];
                 } else {
-                    // 若宽度相等，则高度降序
+                    // 若宽度相等，则高度降序(理解高度降序)
                     return e2[1] - e1[1];
                 }
             }
