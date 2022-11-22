@@ -1,3 +1,5 @@
+// https://leetcode.cn/problems/merge-intervals/
+
 class Solution {
     public int[][] merge(int[][] intervals) {
         if (intervals.length == 0) {
