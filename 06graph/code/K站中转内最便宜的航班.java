@@ -19,7 +19,8 @@ class Solution {
                 int dest = flights[i][2];
 
                 if (previous[pre] != Integer.MAX_VALUE)
-                    current[cur] = Math.min(current[cur], previous[pre] + dest);
+                    // 注意如果题目这里没有说最多经过k次，那么这里可以改成 current[cur] = Math.min(current[cur], current[pre] + dest);
+                    current[cur] = Math.min(current[cur], previous[pre] + dest); 
             }
             previous = current.clone();
         }
