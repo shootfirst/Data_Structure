@@ -27,7 +27,8 @@ class Solution {
     public boolean dfs(int x, int y) {
 
         if (pos == arr.length - 1) return board[x][y] == arr[pos];
-        if (board[x][y] != arr[pos]) return false;;
+        if (board[x][y] != arr[pos]) return false;
+        
         visit[x][y] = true;
         pos += 1;
         for (int[] dir : direction) {
