@@ -1,5 +1,38 @@
 class Solution {
-    // 前缀和 单调队列 动态规划
+public:
+    int boxDelivering(vector<vector<int>>& boxes, int portsCount, int maxBoxes, int maxWeight) {
+        int n = boxes.size();
+        vector<int> dp(n + 1, 100000000);
+        dp[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            int sum = 0;
+            for (int j = i; i - j <= maxBoxes - 1 && j >= 1; j--) {
+                sum += boxes[j - 1][1];
+                if (sum > maxWeight) break;
+                dp[i] = min(dp[i], dp[j - 1] + cost(boxes, j, i));
+            } 
+        }
+        return dp[n];
+    }
+
+    int cost(vector<vector<int>>& boxes, int left, int right) {
+        int res = 2, pre = boxes[left - 1][0];
+        while (++left <= right) {
+            if (pre != boxes[left - 1][0]) {
+                res++;
+            }
+            pre = boxes[left - 1][0];
+        }
+        return res;
+
+    
+    }
+};
+
+// 优化：前缀和，单调队列
+
+
+class Solution {
 public:
     int boxDelivering(vector<vector<int>>& boxes, int portsCount, int maxBoxes, int maxWeight) {
         int n = boxes.size();

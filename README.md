@@ -4,6 +4,14 @@
 
 二叉树的三种非递归遍历、图论五大算法、十大排序算法、并查集、LRU
 
+min_element
+
+lowerbound
+
+upperbound
+
+__builtin_popcount
+
 
 
 
