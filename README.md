@@ -11,6 +11,10 @@ upperbound
 
 __builtin_popcount
 
+## 必背
+
+堆排序，归并排序，快速排序，跳表，lru，并查集
+
 
 ## 由点及面
 
