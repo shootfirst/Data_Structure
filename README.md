@@ -11,6 +11,12 @@ upperbound
 
 __builtin_popcount
 
+## java写算法常见api
+
+### string和int转换
+
+### 随机数
+
 ## 必背
 
 堆排序，归并排序，快速排序，跳表，lru，并查集
