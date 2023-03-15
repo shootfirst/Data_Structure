@@ -15,6 +15,8 @@ to_string
 
 std::stoi
 
+rand
+
 ## java写算法常见api
 
 ### string和int转换
