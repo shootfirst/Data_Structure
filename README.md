@@ -11,6 +11,10 @@ upperbound
 
 __builtin_popcount
 
+to_string
+
+std::stoi
+
 ## java写算法常见api
 
 ### string和int转换
