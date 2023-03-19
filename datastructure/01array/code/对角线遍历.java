@@ -1,4 +1,3 @@
-// https://leetcode.cn/problems/diagonal-traverse/
 
 class Solution {
     public int[] findDiagonalOrder(int[][] mat) {
