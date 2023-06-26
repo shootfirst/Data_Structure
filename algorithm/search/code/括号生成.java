@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/generate-parentheses/
     int left = 0;
     int right = 0;
     int n;

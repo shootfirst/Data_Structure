@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/n-queens/
     // 皇后数量
     int n;
     // 列是否有皇后

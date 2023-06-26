@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // https://leetcode.cn/problems/maximize-score-after-n-operations/
     int maxScore(vector<int>& nums) {
         int n = nums.size();
         int mask = 1 << n;

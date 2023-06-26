@@ -1,53 +1,53 @@
 class Solution {
-private:
-    // 用于记忆化搜索
-    map<vector<int>, int> memo;
 public:
+    // https://leetcode.cn/problems/shopping-offers/
     int shoppingOffers(vector<int>& price, vector<vector<int>>& special, vector<int>& needs) {
-        int n = price.size();
-        vector<vector<int>> filter_special {};
-        for (auto & sp : special) {
-            int count = 0;
-            int total_price = 0;
+        map<vector<int>, int> mem{};
+        vector<vector<int>> specials;
+        int n = needs.size();
+
+        for (auto sp : special) {
+            int res = 0;
             for (int i = 0; i < n; i++) {
-                count += sp[i];
-                total_price += price[i] * sp[i];
+                res += sp[i] * price[i];
             }
-            if (count > 0 && sp[n] < total_price) {
-                filter_special.emplace_back(sp);
+            if (sp[n] < res) {
+                specials.push_back(sp);
             }
         }
 
-        return dfs(price, special, needs, n);
-    }
-
-    int dfs(vector<int>& price, vector<vector<int>>& special, vector<int> need, int n) {
-        if (!memo.count(need)) {
-            int min_price = 0;
-            // 首先计算不购买任何大礼包的价格
-            for (int i = 0; i < n; i++) {
-                min_price += price[i] * need[i];
+        function<int(vector<int>&)> f = [&](vector<int>& need) -> int {
+            if (mem.count(need) != 0) {
+                return mem[need];
             }
-            
-            // 开始计算购买大礼包
-            for (auto & sp : special) {
-                // 判断能不能购买
-                int sp_price = sp[n];
-                vector<int> next_need{};
+
+            int res = 0;
+            for (int i = 0; i < n; i++) {
+                res += price[i] * need[i];
+            }
+
+            for (auto sp : specials) {
+                bool flag = false;
                 for (int i = 0; i < n; i++) {
-                    if (need[i] - sp[i] < 0) {
+                    if (need[i] < sp[i]) {
+                        flag = true;
                         break;
                     }
-                    next_need.emplace_back(need[i] - sp[i]);
                 }
-                // 可以购买
-                if (next_need.size() == n) {
-                    min_price = min(min_price, sp_price + dfs(price, special, next_need, n));
+                if (flag) {
+                    continue;
                 }
+                vector<int> new_need(0);
+                for (int i = 0; i < n; i++) {
+                    new_need.push_back(need[i] - sp[i]);
+                }
+                res = min(res, f(new_need) + sp[n]);
             }
-            memo[need] = min_price;
 
-        }
-        return memo[need];
+            mem[need] = res;
+            return res;
+        };
+
+        return f(needs);
     }
 };
