@@ -1,9 +1,10 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/russian-doll-envelopes/
     int maxEnvelopes(vector<vector<int>>& envelopes) {
         sort(envelopes.begin(), envelopes.end(), cmp);
 
-        // dp[i] 表示以第i个长方体为底，最大能堆积的高度
+        // dp[i] 表示以第i个长方形为底，最大能堆积的高度
 
         vector<int> dp(envelopes.size(), 1);
 

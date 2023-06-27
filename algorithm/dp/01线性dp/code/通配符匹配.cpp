@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/wildcard-matching/
     bool isMatch(string s, string p) {
         int m = s.size(), n = p.size();
 

@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/
     public int maxProfit(int[] prices) {
         if (prices.length == 0) {
             return 0;

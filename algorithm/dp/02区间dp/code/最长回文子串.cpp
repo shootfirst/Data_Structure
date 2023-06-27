@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/longest-palindromic-substring/
     string longestPalindrome(string s) {
         int n = s.size();
 

@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/longest-common-subsequence/
     public int longestCommonSubsequence(String text1, String text2) {
         char[] nums1 = text1.toCharArray();
         char[] nums2 = text2.toCharArray();

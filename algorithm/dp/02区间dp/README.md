@@ -4,15 +4,9 @@
 
 状态转移：
 
-+ o(1)时间复杂度
++ o(1)时间复杂度：dp[i][j] = dp[i + 1][j], dp[i][j - 1], dp[i + 1][j - 1]
 
-一般是与 dp[i + 1][j], dp[i][j - 1], dp[i + 1][j - 1] 有关
-
-+ o(n)时间复杂度
-
-枚举i...j分割点，dp[i][j] = g(f(dp[i][k], dp[k + 1][j])) 其中 k = i .. j-1
-
-区间动态规划一般是用单串问题上，以区间 [i, j] 为单位思考状态的设计和转移
++ o(n)时间复杂度：dp[i][j] = g(f(dp[i][k], dp[k + 1][j])) 其中 k = i .. j-1
 
 
 ## 回文相关问题
@@ -20,6 +14,8 @@
 + [最长回文子串](./code/最长回文子串.cpp)
 
 ## 其他区间dp
+
+https://leetcode.cn/problems/minimum-cost-to-merge-stones/
 
 + [戳气球](./code/戳气球.cpp)
 

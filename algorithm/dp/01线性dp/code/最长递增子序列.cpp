@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/longest-increasing-subsequence/
     int lengthOfLIS(vector<int>& nums) {
         vector<int> dp(nums.size(), 1);
 

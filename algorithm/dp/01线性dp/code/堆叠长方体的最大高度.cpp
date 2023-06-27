@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/maximum-height-by-stacking-cuboids/
     int maxHeight(vector<vector<int>>& cuboids) {
 
         for (auto &v : cuboids) sort(v.begin(), v.end());

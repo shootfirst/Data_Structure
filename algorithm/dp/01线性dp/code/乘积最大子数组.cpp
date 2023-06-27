@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/maximum-product-subarray/
     int maxProduct(vector<int>& nums) {
         int len = nums.size();
         vector<int> maxV(nums), minV(nums);

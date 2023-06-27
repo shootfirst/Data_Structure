@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/JEj789/
     int minCost(vector<vector<int>>& costs) {
         int len = costs.size();
         vector<int> dp(3);
