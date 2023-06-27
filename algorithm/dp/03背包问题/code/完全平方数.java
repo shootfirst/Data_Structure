@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/perfect-squares/
     public int numSquares(int n) {
         int i = 1;
         for(; i * i < n; i++);

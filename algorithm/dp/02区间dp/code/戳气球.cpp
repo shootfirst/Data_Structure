@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/burst-balloons/
     int maxCoins(vector<int>& nums) {
         int n = nums.size();
         vector<int> new_num(n + 2);
@@ -15,10 +16,12 @@ public:
 
         for (int j = 2; j <= n + 1; j++) {
             for (int i = j - 2; i >= 0; i--) {
+
                 for (int k = i + 1; k < j; k++) {
-                    dp[i][j] = max(dp[i][j], 
-                        dp[i][k] + new_num[i] * new_num[k] * new_num[j] + dp[k][j]);
+                    // 理解公式精髓 
+                    dp[i][j] = max(dp[i][j], dp[i][k] + new_num[i] * new_num[k] * new_num[j] + dp[k][j]);
                 }
+
             }
         }
         return dp[0][n + 1];

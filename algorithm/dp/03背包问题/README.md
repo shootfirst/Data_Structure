@@ -27,7 +27,7 @@ dp数组定义：dp[i][j]表示可以使用物品0-i，重量为j的背包，价
 
 dp数组定义：dp[j]表示重量为j的背包，价值最多是多少，迭代轮次为物品序号
 
-状态转移：拿物品：dp[j] = dp[j - weight[i]]  + value[i]，不拿：dp[j] = dp[j]。dp[j] = dp[j]就表示使用`上一维`的原值，dp[j] = dp[j - weight[i]]表示使用`上一维`下标为j -      weight[i]的值
+状态转移：拿物品：dp[j] = dp[j - weight[i]] + value[i]，不拿：dp[j] = dp[j]。dp[j] = dp[j]就表示使用`上一维`的原值，dp[j] = dp[j - weight[i]]表示使用`上一维`下标为j -      weight[i]的值
 
 初始化：都初始化为0即可。根据递推公式，需要保证初始值被覆盖才能得到正确结果，所以初始化为0
 

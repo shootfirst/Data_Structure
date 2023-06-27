@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/target-sum/
     public int findTargetSumWays(int[] nums, int target) {
         int sum = 0;
         for (int i : nums) sum += i;

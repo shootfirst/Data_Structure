@@ -15,9 +15,9 @@
 
 ## 其他区间dp
 
-https://leetcode.cn/problems/minimum-cost-to-merge-stones/
-
 + [戳气球](./code/戳气球.cpp)
+
++ [合并石头的最低成本](./code/合并石头的最低成本.cpp)
 
 
 

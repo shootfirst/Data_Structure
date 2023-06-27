@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/partition-equal-subset-sum/
     public boolean canPartition(int[] nums) {
         int sum = 0;
         for (int i : nums) sum += i;
