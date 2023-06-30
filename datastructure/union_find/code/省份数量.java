@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/number-of-provinces/
     public int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
         UnionFind u = new UnionFind(n);

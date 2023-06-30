@@ -1,6 +1,5 @@
-// https://leetcode.cn/problems/add-two-numbers/
-
 class Solution {
+    // https://leetcode.cn/problems/add-two-numbers/
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int len1 = 0, len2 = 0;
         ListNode h1 = l1, h2 = l2, pre;

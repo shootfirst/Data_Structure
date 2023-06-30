@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/stamping-the-grid/
     bool possibleToStamp(vector<vector<int>>& grid, int stampHeight, int stampWidth) {
         int m = grid.size(), n = grid[0].size();
         vector<vector<int>> sum (m + 1, vector<int>(n + 1, 0));

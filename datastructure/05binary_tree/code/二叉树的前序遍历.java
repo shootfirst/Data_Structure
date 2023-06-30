@@ -14,6 +14,7 @@ class Solution {
     // }
 
     public List<Integer> preorderTraversal(TreeNode root) {
+        // https://leetcode.cn/problems/binary-tree-preorder-traversal/
         Deque <TreeNode> stack = new LinkedList();
         List<Integer> ans = new ArrayList();
         if (root == null) return ans;

@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/er-cha-shu-ren-wu-diao-du/
     double minimalExecTime(TreeNode* root) {
         auto res = dfs(root);
         return res[1];

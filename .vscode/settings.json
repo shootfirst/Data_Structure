@@ -15,6 +15,9 @@
         "chrono": "cpp",
         "algorithm": "cpp",
         "iosfwd": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "__locale": "cpp"
     }
 }

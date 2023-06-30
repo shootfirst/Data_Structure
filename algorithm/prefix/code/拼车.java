@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/car-pooling/
     public boolean carPooling(int[][] trips, int capacity) {
         int [] place = new int [1001];
         int [] cap = new int [1001];

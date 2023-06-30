@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/grumpy-bookstore-owner/
     public int maxSatisfied(int[] customers, int[] grumpy, int minutes) {
         int [] sum=new int[grumpy.length+1];
         int no=0;

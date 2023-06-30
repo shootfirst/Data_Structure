@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/largest-1-bordered-square/
     private int[][] sum = new int[101][101];
     public int largest1BorderedSquare(int[][] grid) {
         int m = grid.length, n = grid[0].length;

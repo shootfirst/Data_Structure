@@ -1,5 +1,5 @@
 class MyStack {
-
+    // https://leetcode.cn/problems/implement-stack-using-queues/
     Queue<Integer> q1 = new LinkedList();
     Queue<Integer> q2 = new LinkedList();
 

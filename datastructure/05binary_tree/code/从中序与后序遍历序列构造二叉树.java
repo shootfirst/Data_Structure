@@ -1,5 +1,6 @@
 class Solution {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
+        // https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
         if (postorder.length == 0) return null;
 
         int root = postorder[postorder.length - 1];

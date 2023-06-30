@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
     int strStr(string haystack, string needle) {
         if (haystack.size() < needle.size()) return -1;
         if (needle.size() == 0) return 0;

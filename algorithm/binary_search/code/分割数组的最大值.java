@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/split-array-largest-sum/
     public int splitArray(int[] nums, int m) {
         int l=0,h=0;
         for(int num:nums){

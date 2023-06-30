@@ -1,4 +1,5 @@
 class MyQueue {
+    // https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
     Deque<Integer> s1 = new LinkedList();
     Deque<Integer> s2 = new LinkedList();
 

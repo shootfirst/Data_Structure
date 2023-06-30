@@ -1,5 +1,6 @@
 class Solution {
 public:
+// https://leetcode.cn/problems/number-of-visible-people-in-a-queue/
     vector<int> canSeePersonsCount(vector<int>& heights) {
         stack<int> s;
         vector<int> ans (heights.size(), 0);

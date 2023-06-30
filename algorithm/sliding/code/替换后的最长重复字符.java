@@ -1,4 +1,5 @@
 class Solution {
+    // https://leetcode.cn/problems/longest-repeating-character-replacement/
     public int characterReplacement(String s, int k) {
         int max=0,left=0,right=0;
         int [] cnt=new int[26];

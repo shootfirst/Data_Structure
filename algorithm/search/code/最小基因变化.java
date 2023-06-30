@@ -1,4 +1,5 @@
 class Solution {
+    //https://leetcode.cn/problems/minimum-genetic-mutation/
     public int minMutation(String start, String end, String[] bank) {
         Set<String> list = new HashSet();
         for (String s: bank) list.add(s);

@@ -1,4 +1,3 @@
-
 class Solution {
     public int[] findDiagonalOrder(int[][] mat) {
         int i=0,j=0,m=mat.length,n=mat[0].length,k=0;
