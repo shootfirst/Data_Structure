@@ -26,3 +26,4 @@ int gcd(int a, int b) { // 欧几里得算法
 
 
 
+
