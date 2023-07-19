@@ -3,28 +3,26 @@ public:
 // https://leetcode.cn/problems/longest-palindromic-substring/
     string longestPalindrome(string s) {
         int n = s.size();
-
-        if (n < 2) {
-            return s;
+        bool dp[n][n];
+        memset(dp, 0, sizeof(dp));
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = true;
         }
-        vector<vector<bool>> dp (n, vector<bool>(n, true));
-
-        for (int j = 1; j < n; j++) {
-            for (int i = j - 1; i >= 0; i--) {
-                dp[i][j] = s[i] == s[j] && dp[i + 1][j - 1];
-            }
-        }
-
-        int max = 0;
-        string ans = "";
-        for (int j = n - 1; j >= 0; j--) {
-            for (int i = 0; i <= j; i++) {
-                if (dp[i][j] && j - i + 1 > max) {
-                    max = j - i + 1;
-                    ans = s.substr(i, j - i + 1);
+        string ans = s.size() == 0 ? "" : s.substr(0, 1);
+        for (int len = 2; len <= n; len++) {
+            for (int i = 0; i + len - 1 < n; i++) {
+                int left = i, right = i + len - 1;
+                if (left == right - 1) {
+                    dp[left][right] = s[left] == s[right];
+                } else {
+                    dp[left][right] = dp[left + 1][right - 1] && s[left] == s[right];
+                }
+                if (dp[left][right] && len > ans.size()) {
+                    ans = s.substr(left, len);
                 }
             }
         }
+
         return ans;
     }
 };
